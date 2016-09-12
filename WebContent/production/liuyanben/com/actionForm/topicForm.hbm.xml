@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.actionForm.TopicForm" table="tb_topic">
+	<id name="id" column="id" type="int">
+      <generator class="increment"/> <!--设置自动增值-->
+    </id>
+	<property name="author"  column="author"  type="string" not-null="false" />
+    <property name="face" column="face" type="string" not-null="false"/>
+    <property name="content"  column="content"  type="string" not-null="false" />
+	<property name="ip"  column="ip"  type="string" not-null="false" />
+    <property name="email"  column="email"  type="string"/>
+    <property name="createTime"  column="createTime" type="string" not-null="false" />
+	</class>
+</hibernate-mapping>

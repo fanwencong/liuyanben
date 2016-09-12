@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.actionForm.ManagerForm" table="tb_manager">
+	<id name="id" column="id" type="int">
+      <generator class="increment"/> <!--设置自动增值-->
+    </id>
+	<property name="name" column="name" type="string" not-null="true"/>
+    <property name="pwd"  column="pwd"  type="string" not-null="true"/>
+	</class>
+</hibernate-mapping>
